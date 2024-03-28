@@ -1,7 +1,7 @@
 .input {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 70%;
   position: relative;
 }
 
@@ -97,6 +97,7 @@
 }
 
 .todos__single--text {
+  flex: 1;
   font: 1px;
   padding: 5px;
   border: none;
@@ -111,4 +112,26 @@
   margin-left: 10px;
   font-size: 25px;
   cursor: pointer;
+}
+
+@media (max-width: 110px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
 }
